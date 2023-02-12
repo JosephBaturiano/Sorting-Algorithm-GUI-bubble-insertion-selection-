@@ -75,3 +75,21 @@ result_frame.grid(padx=10, pady=2)
 result1 = StringVar()
 result = Text(frame, width=35, bg='gray88')
 result.grid(pady=1)
+
+Buttons_frame = Frame(root, highlightbackground='black', highlightthickness=2)
+Buttons_frame.columnconfigure(0, weight=1)
+Buttons_frame.columnconfigure(1, weight=1)
+Buttons_frame.columnconfigure(2, weight=1)
+Buttons_frame.grid(row=1, column=0, pady=5, padx=5)
+B_Button = Button(Buttons_frame, text="Bubble Sort ", width=15, font=('Arial', 13), command=bubble_sort,
+                  bg="azure3", activebackground='azure4').grid(row=0, column=0, sticky=tkinter.W+tkinter.E)
+I_Button = Button(Buttons_frame, text="Insertion Sort ", width=15, font=('Arial', 13), command=insertion_sort,
+                  bg="azure3", activebackground='azure4').grid(row=0, column=1, sticky=tkinter.W+tkinter.E)
+S_Button = Button(Buttons_frame, text="Selection Sort ", width=15, font=('Arial', 13), command=select_sort,
+                  bg="azure3", activebackground='azure4').grid(row=0, column=2, sticky=tkinter.W+tkinter.E)
+none1 = Button(Buttons_frame, text="-", width=15, font=('Arial', 13), command=clear,
+               bg="azure3", activebackground='azure4').grid(row=1, column=0, sticky=tkinter.W+tkinter.E)
+Clear_button = Button(Buttons_frame, text="Clear All  ", width=15, font=('Arial', 13), command=clear,
+                      bg="azure3", activebackground='azure4').grid(row=1, column=1, sticky=tkinter.W+tkinter.E)
+none2 = Button(Buttons_frame, text="Exit", width=15, font=('Arial', 13), command=root.destroy,
+               bg="azure3", activebackground='azure4').grid(row=1, column=2, sticky=tkinter.W+tkinter.E)
