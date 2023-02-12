@@ -93,3 +93,5 @@ Clear_button = Button(Buttons_frame, text="Clear All  ", width=15, font=('Arial'
                       bg="azure3", activebackground='azure4').grid(row=1, column=1, sticky=tkinter.W+tkinter.E)
 none2 = Button(Buttons_frame, text="Exit", width=15, font=('Arial', 13), command=root.destroy,
                bg="azure3", activebackground='azure4').grid(row=1, column=2, sticky=tkinter.W+tkinter.E)
+
+root.mainloop()
