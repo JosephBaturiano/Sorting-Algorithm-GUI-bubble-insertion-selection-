@@ -56,3 +56,12 @@ def select_sort():
         print(random_num)
         result.insert(tkinter.END, random_num)
         result.insert(tkinter.END, ('\n'))
+
+# DELETING THE NUMBERS IN TEXTBOX
+
+
+def clear():
+    x = result.get(0.0, END)
+    y = x[0:-1000]
+    result.delete(0.0, END)
+    result.insert(END, y)
