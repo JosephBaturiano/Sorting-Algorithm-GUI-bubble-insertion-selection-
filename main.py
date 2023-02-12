@@ -65,3 +65,7 @@ def clear():
     y = x[0:-1000]
     result.delete(0.0, END)
     result.insert(END, y)
+
+
+frame = LabelFrame(root, text="Sorted Numbers", padx=10, pady=5)
+frame.grid(padx=10, pady=2)
