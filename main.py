@@ -38,3 +38,21 @@ def insertion_sort():
         print(random_num)
         result.insert(tkinter.END, random_num)
         result.insert(tkinter.END, ('\n'))
+
+# SELECTION SORT
+
+
+def select_sort():
+    print("\n\t\tTHE NUMBERS ARE SORTED NOW USING SELECTION SORT\n")
+    for i in range(9):
+        minpos = i
+        for j in range(i, 10):
+            if random_num[j] < random_num[minpos]:
+                minpos = j
+
+        temp = random_num[i]
+        random_num[i] = random_num[minpos]
+        random_num[minpos] = temp
+        print(random_num)
+        result.insert(tkinter.END, random_num)
+        result.insert(tkinter.END, ('\n'))
