@@ -69,3 +69,9 @@ def clear():
 
 frame = LabelFrame(root, text="Sorted Numbers", padx=10, pady=5)
 frame.grid(padx=10, pady=2)
+
+result_frame = Frame(root)
+result_frame.grid(padx=10, pady=2)
+result1 = StringVar()
+result = Text(frame, width=35, bg='gray88')
+result.grid(pady=1)
